@@ -5,7 +5,7 @@ Sometimes it is useful to get a chronological list of events from multiple trace
 
 The oracle utility ```trcsess``` will combine trace files, but does not show a timestamp and session per line.
 
-## trace-combined-sequence.pl
+## trace-combined-sequential.pl
 
 This script will read the trace file created by ```trcsess``` and create output that shows the timestamp and PID per line.
 
@@ -19,13 +19,13 @@ Run this command to create main.trc:
 trcsess output=main.trc service=examples.jks.com trace/*.trc
 ```
 
-Next use trace-combined-sequence.pl to create output.
+Next use trace-combined-sequential.pl to create output.
 
 The file 'main.trc' is expected to be in the current directory.
 
 ```bash
 
->  ./trace-combined-sequence.pl
+>  ./trace-combined-sequential.pl
 2019-07-09 09:57:07.703523|9850|PARSING|#140472196919200|50vxqdkj4zu1w|select user#,password,datats#,tempts#,type#,defrole,resource$,pt
 2019-07-09 09:57:07.703523|9850|PARSE|#140472196919200|50vxqdkj4zu1w|select user#,password,datats#,tempts#,type#,defrole,resource$,pt
 2019-07-09 09:57:07.703523|9850|EXEC|#140472196919200|50vxqdkj4zu1w|select user#,password,datats#,tempts#,type#,defrole,resource$,pt
