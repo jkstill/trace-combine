@@ -19,7 +19,13 @@ Currently these scripts work only with ISO8601 trace file timestamps.
 
 eg: 2019-07-09T09:57:07.704095-07:00
 
-There are two example trace files in the trace directory that can be used to test this.
+The timestamps are cumulative; the elapsed time per operation is added to the current timestamp.
+
+These are only an approximation as time is regularly 'lost' in Oracle trace files due to some untracked operations.
+
+Even so, the operations should appear in order (mostly)
+
+There are two example trace files in the trace directory that can be used to test these scripts
 
 Run this command to create main.trc:
 
