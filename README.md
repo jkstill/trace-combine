@@ -9,7 +9,15 @@ The oracle utility ```trcsess``` will combine trace files, but does not show a t
 
 This script will read the trace file created by ```trcsess``` and create output that shows the timestamp and PID per line.
 
+## trace-sequential.pl
+
+This script will read a single 10046 trace file from STDIN and provide operations with timestamps.
+
 ## Usage
+
+Currently these scripts work only with ISO8601 trace file timestamps.
+
+eg: 2019-07-09T09:57:07.704095-07:00
 
 There are two example trace files in the trace directory that can be used to test this.
 
@@ -94,7 +102,6 @@ The sql_id from the trace file, if available.
 
 
 The SQL statement from the trace file, if available.
-
 
 
 
