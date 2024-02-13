@@ -1,6 +1,9 @@
 
 # Chronological Operations from Multiple 10046 Trace Files
 
+DO NOT USE
+Find this now in the oracle-trace repo
+
 Sometimes it is useful to get a chronological list of events from multiple trace files.
 
 The oracle utility ```trcsess``` will combine trace files, but does not show a timestamp and session per line.
